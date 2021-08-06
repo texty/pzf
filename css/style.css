@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body * {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.text {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.text p {
+  font-size: 18px;
+}
+
+.text h2 {
+  text-align: center;
+}
+
+.map-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  overflow: hidden;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.legend {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  padding: 30px 20px;
+  z-index: 100000;
+}
+
+.legend div {
+  font-size: 16px;
+  color: #333;
+  font-family: sans-serif;
+  margin-bottom: 10px;
+}
+
+.legend div span {
+  border-radius: 50%;
+  display: inline-block;
+  height: 15px;
+  margin-right: 15px;
+  width: 15px;
+}
+
+.mapboxgl-popup {
+  max-width: 300px;
+  font-size: 16px;
+  color: #333;
+  font-family: sans-serif;
+  background-color: white;
+}
+
+.mapboxgl-popup-close-button {
+  margin-left: 10px;
+}
+/*# sourceMappingURL=style.css.map */

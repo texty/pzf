@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <title></title>
+
+    
+
+
+<!-- 
+    <link rel="stylesheet" href="libs/leaflet.css"/>
+    <script src="libs/leaflet.js"></script>
+    <script src="libs/leaflet.ajax.min.js"></script>
+    <script src="libs/leaflet-side-by-side.js"></script>
+    <script src="libs/leaflet-providers.js"></script>
+    <script src="libs/TileLayer.GeoJSON.js"></script>
+    <script src="libs/jquery-3.3.1.js"></script>
+    <script src="libs/scrollama.min.js"></script> -->
+
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.4.0/mapbox-gl.css"/>
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.4.0/mapbox-gl-compare.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body>
+
+    <div class="text">
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam egestas malesuada libero, non dictum sapien accumsan dignissim. Praesent at felis est. Suspendisse ac sapien vitae velit consequat congue in at mi. Curabitur molestie luctus ligula, ut pulvinar ligula. Aenean mollis, risus eu bibendum sollicitudin, magna justo scelerisque lorem, in ornare ipsum velit ut libero. Nullam nibh augue, tincidunt vel posuere non, placerat aliquam velit. Ut quis leo massa. Sed accumsan lacus vitae dolor venenatis, a ullamcorper lectus egestas. Duis libero erat, finibus a eros eget, tempus suscipit erat. Suspendisse potenti. Nulla gravida lectus mi, vehicula eleifend tellus hendrerit a. Fusce erat libero, tristique vel luctus a, mattis vel nulla. Praesent cursus ipsum hendrerit metus pulvinar laoreet.
+    </p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam egestas malesuada libero, non dictum sapien accumsan dignissim. Praesent at felis est. Suspendisse ac sapien vitae velit consequat congue in at mi. Curabitur molestie luctus ligula, ut pulvinar ligula. Aenean mollis, risus eu bibendum sollicitudin, magna justo scelerisque lorem, in ornare ipsum velit ut libero. Nullam nibh augue, tincidunt vel posuere non, placerat aliquam velit. Ut quis leo massa. Sed accumsan lacus vitae dolor venenatis, a ullamcorper lectus egestas. Duis libero erat, finibus a eros eget, tempus suscipit erat. Suspendisse potenti. Nulla gravida lectus mi, vehicula eleifend tellus hendrerit a. Fusce erat libero, tristique vel luctus a, mattis vel nulla. Praesent cursus ipsum hendrerit metus pulvinar laoreet.
+    </p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam egestas malesuada libero, non dictum sapien accumsan dignissim. Praesent at felis est. Suspendisse ac sapien vitae velit consequat congue in at mi. Curabitur molestie luctus ligula, ut pulvinar ligula. Aenean mollis, risus eu bibendum sollicitudin, magna justo scelerisque lorem, in ornare ipsum velit ut libero. Nullam nibh augue, tincidunt vel posuere non, placerat aliquam velit. Ut quis leo massa. Sed accumsan lacus vitae dolor venenatis, a ullamcorper lectus egestas. Duis libero erat, finibus a eros eget, tempus suscipit erat. Suspendisse potenti. Nulla gravida lectus mi, vehicula eleifend tellus hendrerit a. Fusce erat libero, tristique vel luctus a, mattis vel nulla. Praesent cursus ipsum hendrerit metus pulvinar laoreet.
+    </p>
+
+    <h2>Більшість обʼєктів ПЗФ потерпають від незаконих оранок. Ділянки в межах ПЗФ виставляють на продаж</h2>
+
+</div>
+
+    <div class="map-wrapper">
+
+        <div id="map-legend" class="legend">
+            <div><span style="background-color: lightgrey"></span>Заповідні зони</div>
+            <div><span style="background-color: red"></span>Незаконні оранки</div>
+            <div><span style="background-color: blue"></span>Ділянки, виставлені на торги</div>
+        </div> 
+
+
+        <div id="comparison-container">
+            <div id="before" class="map"></div>
+            <div id="after" class="map"></div> 
+        </div>
+
+    </div> 
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam egestas malesuada libero, non dictum sapien accumsan dignissim. Praesent at felis est. Suspendisse ac sapien vitae velit consequat congue in at mi. Curabitur molestie luctus ligula, ut pulvinar ligula. Aenean mollis, risus eu bibendum sollicitudin, magna justo scelerisque lorem, in ornare ipsum velit ut libero. Nullam nibh augue, tincidunt vel posuere non, placerat aliquam velit. Ut quis leo massa. Sed accumsan lacus vitae dolor venenatis, a ullamcorper lectus egestas. Duis libero erat, finibus a eros eget, tempus suscipit erat. Suspendisse potenti. Nulla gravida lectus mi, vehicula eleifend tellus hendrerit a. Fusce erat libero, tristique vel luctus a, mattis vel nulla. Praesent cursus ipsum hendrerit metus pulvinar laoreet.
+    </p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam egestas malesuada libero, non dictum sapien accumsan dignissim. Praesent at felis est. Suspendisse ac sapien vitae velit consequat congue in at mi. Curabitur molestie luctus ligula, ut pulvinar ligula. Aenean mollis, risus eu bibendum sollicitudin, magna justo scelerisque lorem, in ornare ipsum velit ut libero. Nullam nibh augue, tincidunt vel posuere non, placerat aliquam velit. Ut quis leo massa. Sed accumsan lacus vitae dolor venenatis, a ullamcorper lectus egestas. Duis libero erat, finibus a eros eget, tempus suscipit erat. Suspendisse potenti. Nulla gravida lectus mi, vehicula eleifend tellus hendrerit a. Fusce erat libero, tristique vel luctus a, mattis vel nulla. Praesent cursus ipsum hendrerit metus pulvinar laoreet.
+    </p>
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.4.0/mapbox-gl.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.4.0/mapbox-gl-compare.js"></script>
+    <script src="https://api.tiles.mapbox.com/mapbox.js/plugins/turf/v2.0.0/turf.min.js"></script>
+
+    <script src="js/mapbox_map.js"></script>   
+</body>
+</html> 
