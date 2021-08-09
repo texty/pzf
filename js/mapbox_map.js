@@ -49,6 +49,9 @@ beforeMap.on("wheel", event => {
 
 beforeMap.on('load', function () {
 
+ 
+
+
     beforeMap.addSource("pzf", {"type": "geojson", 'data': "data/pzf.geojson" });
     beforeMap.addLayer({
         "id": "pzf-fill",
@@ -61,12 +64,54 @@ beforeMap.on('load', function () {
     });   
 
 
+    afterMap.addSource("pzf2", {"type": "geojson", 'data': "data/pzf.geojson" });
+    afterMap.addLayer({
+        "id": "pzf-stroke",
+        'type': 'fill',
+        "source": "pzf2",      
+        'paint': {
+            'fill-color': 'white',
+            'fill-opacity': 0.15
+        }
+    });   
+
+
+/*     beforeMap.addSource("water", {"type": "geojson", 'data': "data/water.geojson" });
+    beforeMap.addLayer({
+        "id": "water-fill",
+        'type': 'fill',
+        "source": "water",
+        'paint': {
+            'fill-color': '#9cc0f9', 'fill-opacity': 0.3
+           
+        }
+    });   
+ */
+ 
+
     beforeMap.addSource("illegal", {"type": "geojson", 'data': "data/illegal.geojson" });
     beforeMap.addLayer({
         "id": "illegal-fill",
         'type': 'fill',
         "source": "illegal",
-        'paint': {'fill-color': 'red' }
+        'paint': {        
+            'fill-color':'red' 
+        }
+    });
+
+
+    beforeMap.addSource("illegal-points", {"type": "geojson", 'data': "data/illegal_points.geojson" });
+    beforeMap.addLayer({
+        "id": "illegal-markers",
+        'type': 'circle',
+        "source": "illegal-points",
+        'paint': {        
+            'circle-color':'red',
+            'circle-radius': 8,
+            'circle-blur': 1,
+            'circle-opacity': 0.3
+           
+        }
     });
     
     beforeMap.addSource("for-sale", {"type": "geojson", 'data': "data/kadastr.geojson" });
@@ -74,8 +119,23 @@ beforeMap.on('load', function () {
         "id": "sale-fill",
         'type': 'fill',
         "source": "for-sale",
-        'paint': {'fill-color': 'blue' }
+        'paint': {'fill-color': 'blue'}
     });   
+
+
+    beforeMap.addSource("kadastr-points", {"type": "geojson", 'data': "data/kadastr_points.geojson" });
+    beforeMap.addLayer({
+        "id": "kadastr-markers",
+        'type': 'circle',
+        "source": "kadastr-points",
+        'paint': {        
+            'circle-color':'blue',
+            'circle-radius': 8,
+            'circle-blur': 1,
+            'circle-opacity': 0.5
+           
+        }
+    });
     
 
     beforeMap.on('click', 'pzf-fill', (e) => { 
