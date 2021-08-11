@@ -1,5 +1,5 @@
 
-const min_zoom = 7.5;
+const min_zoom = 8;
 mapboxgl.accessToken = 'pk.eyJ1IjoicnJldXNzZXIiLCJhIjoiY2tsNzNnN2xwMXJ3bTJxcWplaHptZmtmNiJ9.4jyhYK5B3nCMw2NTD761hg';
 
 const beforeMap = new mapboxgl.Map({

@@ -11,7 +11,12 @@ body * {
   user-select: none;
 }
 
+h2 {
+  margin-top: 100px;
+}
+
 h3 {
+  margin-top: 50px;
   text-align: center;
 }
 
