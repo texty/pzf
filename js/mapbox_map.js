@@ -1,5 +1,5 @@
 
-const min_zoom = 8;
+const min_zoom = 7.5;
 mapboxgl.accessToken = 'pk.eyJ1IjoicnJldXNzZXIiLCJhIjoiY2tsNzNnN2xwMXJ3bTJxcWplaHptZmtmNiJ9.4jyhYK5B3nCMw2NTD761hg';
 
 const beforeMap = new mapboxgl.Map({
@@ -58,7 +58,7 @@ beforeMap.on('load', function () {
         'type': 'fill',
         "source": "pzf",
         'paint': {
-            'fill-color': 'lightgrey',
+            'fill-color': '#ffffcb',
             'fill-outline-color': 'grey' 
         }
     });   
@@ -95,7 +95,7 @@ beforeMap.on('load', function () {
         'type': 'fill',
         "source": "illegal",
         'paint': {        
-            'fill-color':'red' 
+            'fill-color':'#f20505' 
         }
     });
 
@@ -106,7 +106,7 @@ beforeMap.on('load', function () {
         'type': 'circle',
         "source": "illegal-points",
         'paint': {        
-            'circle-color':'red',
+            'circle-color':'#f20505',
             'circle-radius': 8,
             'circle-blur': 1,
             'circle-opacity': 0.3
