@@ -70,8 +70,9 @@ beforeMap.on('load', function () {
         'type': 'fill',
         "source": "pzf2",      
         'paint': {
-            'fill-color': 'white',
-            'fill-opacity': 0.15
+            'fill-color': 'transparent',
+            'fill-outline-color': '#ffffcb', 
+            'fill-opacity': 0.5
         }
     });   
 

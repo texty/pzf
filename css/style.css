@@ -3,14 +3,17 @@ body {
   padding: 0;
 }
 
-body * {
+p, li {
+  font-size: 18px;
+}
+
+/* body * {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none;
-}
-
+   user-select: none;
+} */
 h2 {
   margin-top: 100px;
 }
